@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#0A0A0A;
+}
+h1{
+    font-family: 'IM Fell English', serif;
+    font-size: 72px;
+    color: #FFB11B;
+    text-align: center;
+    line-height: 10px;
+}
+h2{
+    font-family: 'IM Fell English', serif;
+    font-size: 42px;
+    color: #FFB11B;
+    /* line-height: 10px; */
+}
+h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #E5E5E5;
+}
+h4{
+    font-family: 'IM Fell English', serif;
+    font-size: 22px;
+    color:#E5E5E5;
+}
+h5{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #FFB11B;
+}
+
+/* ***HERO*** */
+
+.hero_cont{
+    height: auto;
+    margin: 50px 50px 0 50px;
+    background-image: url(../assets/bg_spots.svg), url(../assets/stag.svg);
+    background-repeat: repeat, no-repeat;
+    background-size: 40%;
+    background-position: center;
+    background-color:#242424;
+}
+.hero_name{
+    padding-left: 50px;
+    float: left;
+}
+.hero_links{
+    padding-top: 32px;
+    float: right;
+}
+.hero_links h5{
+    padding-right: 50px;
+}
+.hero_links h5{
+    display: inline;
+}
+.hero_content{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 180px;
+    padding-bottom: 100px;
+}
+.hero_content img{
+    padding: 0 50px 0 50px;
+}
+.hero_mid h1{
+    width: 500px;
+}
+
+/* ***ABOUT*** */
+
+.about_cont{
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    margin: 50px 50px 0 50px;
+}
+.about_left{
+    width: 50%;
+    float: left;
+    padding: 135px 160px 135px 160px;
+    background-image: url(../assets/about_bg.svg);
+    background-repeat: repeat;
+    background-color: #3D3D3D;
+}
+.about_left h2{
+    margin-bottom: 0px;
+}
+.about_left::before{
+    position: absolute;
+  content: "";
+  width: 500px;
+  height: 500px;
+  background-image: url(../assets/projects_earth.svg);
+  background-repeat: no-repeat;
+  background-position: 75% 40%;
+}
+.about_right{
+    width: 50%;
+    margin-left: 50px;
+    float: right;
+    background-image: url(../assets/tim_update@2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #3D3D3D;
+}
+
+/* ***PROJECTS*** */
+
+.projects_cont{
+    margin: 50px 50px 0 50px;
+    background-image: url(../assets/projects_bg.svg);
+    background-position: center;
+    background-repeat: repeat;
+    background-color:#242424;
+}
+.projects{
+    background-color: #a32323;
+}
