@@ -1,7 +1,7 @@
 body{
     margin: 30px;
     padding: 0;
-    background-color:#0A0A0A;
+    background-color:#F9F9F9;
 }
 h5 a:link,
 h5 a:visited,
@@ -9,48 +9,48 @@ h5 a:active {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     border: none;
-    color: #FFB11B;
+    color: #ffffff;
     padding: 10px 20px 10px 20px;
     display: inline-block;
     font-weight: 300;
     font-size: 16px;
 }
 h5 a:hover{
-    background-color: #FFB11B;
+    background-color: #ffffff;
     border: none;
-    color: #242424;
+    color: #9625AA;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
 }
 h1{
-    font-family: 'IM Fell English', serif;
+    font-family: 'Patua One', cursive;
     font-size: 72px;
-    color: #FFB11B;
+    color: #ffffff;
 }
 h2{
-    font-family: 'IM Fell English', serif;
+    font-family: 'Patua One', cursive;
     font-size: 42px;
-    color: #FFB11B;
+    color: #9625AA;
 }
 h3{
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
-    color: #BBBBBB;
+    color:#3D3D3D;
 }
 h4{
-    font-family: 'IM Fell English', serif;
+    font-family: 'Patua One', cursive;
     font-weight: 300;
     font-size: 22px;
-    color:#BBBBBB;
+    color:#ffffff;
 }
 h6{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 22px;
-    color: #BBBBBB;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -58,11 +58,6 @@ h6{
 
 .header_cont{
     height: 90px;
-    background-image: url(../assets/bg_spots.svg);
-    background-repeat: repeat;
-    background-size: 40%;
-    background-position: center;
-    background-color:#242424;
 }
 .header_cont h4{
     padding-top: 5px;
@@ -81,20 +76,21 @@ h6{
 /* ***HERO*** */
 
 .hero_content{
-    padding-top: 60px;
     text-align: center;
-    background-image: url(../assets/branch_left.svg), url(../assets/branch_right.svg), url(../assets/stag.svg), url(../assets/bg_spots.svg);
-    background-repeat: no-repeat, no-repeat, no-repeat, repeat;
-    background-size: 20%, 20%, 22%, 40%;
-    background-position: 10% 60%, 90% 60%, center, center;
-    background-color:#242424;
+    background-image: url(../assets/hero_bubs.svg), url(../assets/hero_bg.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, auto;
+    background-position: center, center;
 }
 .hero_content h1{
+    padding-top: 30px;
     margin-bottom: 0px;
 }
 .hero_content h3{
     width: 35%;
-    margin: 0 auto 150px auto;
+    color:#ffffff;
+    opacity: 0.75;
+    margin: 10px auto 150px auto;
 }
 .work_btn{
     padding-bottom: 50px;
@@ -104,10 +100,10 @@ h6{
 .work_btn a:active {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
-    color: #FFB11B;
+    color: #ffffff;
     border-style: solid;
     border-width: 1px;
-    border-color: #FFB11B;
+    border-color: #ffffff;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     display: inline-block;
@@ -115,12 +111,12 @@ h6{
     font-size: 16px;
 }
 .work_btn a:hover{
-    background-color: #FFB11B;
+    background-color: #ffffff;
     border: none;
-    color: #242424;
+    color: #9625AA;
     border-style: solid;
     border-width: 1px;
-    border-color: #242424;
+    border-color: #9625AA;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     display: inline-block;
@@ -133,16 +129,13 @@ h6{
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    border-style: solid;
+    border-color: #D2D2D2;
 }
 .about_left{
     flex: 60%;
     margin-right: 30px;
-    padding: 90px 180px 90px 180px;
-    background-image: url(../assets/about_bg.svg), url(../assets/projects_earth.svg), url(../assets/about_spinner.svg);
-    background-repeat: repeat, no-repeat, no-repeat;
-    background-position: top 0px left 0px, top 200px left -200px, top -200px left 600px;
-    background-size: contain;
-    background-color: #3D3D3D;
+    padding: 90px 100px 90px 180px;
 }
 .about_left h2{
     margin-bottom: 0px;
@@ -154,7 +147,6 @@ h6{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #3D3D3D;
 }
 
 /* ***PROJECTS*** */
@@ -162,11 +154,7 @@ h6{
 .projects_cont{
     height: auto;
     margin-top: 30px;
-    padding-top: 50px;
-    background-image: url(../assets/projects_bg.svg);
-    background-position: center;
-    background-repeat: repeat;
-    background-color:#242424;
+    padding-top: 30px;
 }
 .projects_cont h2{
     margin-bottom: 0px;
@@ -180,54 +168,26 @@ h6{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 90px auto 0 auto;
+    margin: 70px auto 0 auto;
 }
-.button{
-    position:relative;
-    width: 335px;
-    height: 600px;
-    margin-bottom: 90px;
-    background-size: auto, cover;
-    background-repeat: no-repeat, no-repeat;
-    background-position: top 30px left 248px, center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #3D3D3D;
+.project{
+    padding-bottom: 90px;
 }
-.link-spanner{
-    position:absolute; 
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-    z-index: 1;
+.project h3{
+    position: relative;
+    line-height: 0px;
+    font-size: 22px;
+    font-weight: 400;
+    color:rgb(0, 0, 0);
 }
-.btn_info{
-    height: 90px;
-    margin-top: 510px;
-    background-color: #000000;
+.project img{
+    opacity: 1;
+    transition: all .25s ease;
 }
-.btn_info h6{
-    padding-top: 30px;
-}
-.btn1{
-    background-image: url(../assets/mag.svg), url(../assets/Group-314@2x_BW.png);
-}
-.btn2{
-    background-image: url(../assets/mag.svg), url(../assets/moodboard@2x_BW.jpg);
-}
-.btn1:hover{
+.project img:hover{
+    opacity: 0.6;
     cursor:pointer;
-    border:none;
-    background-image: url(../assets/mag.svg), url(../assets/Group-314@2x.png);
-    background-size: auto, 150%;
-    background-position: top 0px left -60px, center;
-}
-.btn2:hover{
-    cursor:pointer;
-    border:none;
-    background-image: url(../assets/mag.svg), url(../assets/moodboard@2x.jpg);
-    background-size: auto, 150%;
-    background-position: top 0px left -60px, center;
+    transition: all .25s ease;
 }
 
 /* ***PROCESS*** */
@@ -238,14 +198,16 @@ h6{
     justify-content: flex-start;
     height: auto;
     margin-top: 30px;
+    border-style: solid;
+    border-color:#D2D2D2;
 }
 .process_left{
     flex: 40%;
-    background-image: url(../assets/process_lion.svg);
+    /* background-image: url(../assets/process_lion.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30%;
-    background-color: #3D3D3D;
+    background-color: #3D3D3D; */
 }
 .process_right h2{
     margin-bottom: 0px;
@@ -254,11 +216,6 @@ h6{
     flex: 60%;
     padding: 60px 100px 60px 100px;
     margin-left: 30px;
-    background-image: url(../assets/process_plane.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-color: #3D3D3D;
 }
 
 /* ***FOOTER*** */
@@ -266,10 +223,8 @@ h6{
 .footer{
     height: auto;
     margin-top: 30px;
-    background-color:#242424;
 }
 .footer h3{
-    opacity: 0.4;
     padding: 30px 0 30px 50px;
 }
 
@@ -281,11 +236,6 @@ h6{
     }
 }
 @media only screen and (max-width: 1024px) {
-    .hero_content{
-        padding-top: 30px;
-        background-size: 20%, 20%, 40%, 40%;
-        background-position: 10% 60%, 90% 60%, center, center;
-    }
     .about_cont{
         display: flex;
         flex-direction: row;
@@ -299,18 +249,15 @@ h6{
     }
     .about_right{
         flex: 40%;
-        height: 500px; 
-        margin-top: 30px;
+        height: 300px; 
+        margin-top: 0px;
+        margin-bottom: 50px;
+        background-size: contain;
     } 
     .process_right{
         width: 50%;
         padding: 30px 50px 50px 50px;
         float: right;
-        background-image: url(../assets/process_plane.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 60%;
-        background-color: #3D3D3D;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -320,14 +267,12 @@ h6{
     h2{
         font-size: 36px;
     }
+    .hero_content{
+        background-size: 250%, auto;
+    }
     .hero_content h3{
         width: 50%;
         margin: 0 auto 100px auto;
-    }
-    .hero_content{
-        padding-top: 30px;
-        background-size: 30%, 30%, 50%, 40%;
-        background-position: 5% 60%, 95% 60%, center, center;
     }
     .about_left{
         flex: 100%;
@@ -376,9 +321,7 @@ h6{
     }
     .hero_content{
         width: 100%;
-        padding-top: 10px;
-        background-size: 30%, 30%, 70%, 100%;
-        background-position: -100% 60%, 200% 60%, center, center;
+        background-size: 360%, auto;
     }
     .header_cont{
         background-size: 100%;
