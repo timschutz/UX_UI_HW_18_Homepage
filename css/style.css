@@ -1,7 +1,6 @@
 body{
     margin: 30px;
     padding: 0;
-    background-color:#F9F9F9;
 }
 h5 a:link,
 h5 a:visited,
@@ -69,6 +68,9 @@ h6{
     padding-right: 40px;
     float: right;
 }
+.menu_icon{
+    display: none;
+}
 .header_links h5{
     display: inline;
 }
@@ -131,6 +133,7 @@ h6{
     margin-top: 30px;
     border-style: solid;
     border-color: #D2D2D2;
+    background-color: #F9F9F9;
 }
 .about_left{
     flex: 60%;
@@ -143,10 +146,15 @@ h6{
 .about_right{
     flex: 40%;
     height: inherit; 
-    background-image: url(../assets/tim_update@2x.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../assets/tim_bubs.svg), url(../assets/tim_update@2x.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 80%, contain;
+}
+.tim_bubs{
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
 }
 
 /* ***PROJECTS*** */
@@ -200,21 +208,22 @@ h6{
     margin-top: 30px;
     border-style: solid;
     border-color:#D2D2D2;
+    background-color: #F9F9F9;
 }
 .process_left{
     flex: 40%;
-    /* background-image: url(../assets/process_lion.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30%;
-    background-color: #3D3D3D; */
+    padding: 0px 0px 0px 80px;
+    background-image: url(../assets/process_bubs.svg), url(../assets/process-80@2x.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 80%, contain;
 }
 .process_right h2{
     margin-bottom: 0px;
 }
 .process_right{
     flex: 60%;
-    padding: 60px 100px 60px 100px;
+    padding: 60px 100px 60px 20px;
     margin-left: 30px;
 }
 
@@ -230,11 +239,17 @@ h6{
 
 /* ***MEDIA QUERIES*** */
 
+/* ***MAX 1250*** */
+
 @media only screen and (max-width: 1250px) {
     .about_left{
         padding: 45px 90px 45px 90px;
     }
 }
+
+/* ***MAX 1024*** */
+
+
 @media only screen and (max-width: 1024px) {
     .about_cont{
         display: flex;
@@ -260,6 +275,9 @@ h6{
         float: right;
     }
 }
+
+/* ***MAX 768*** */
+
 @media only screen and (max-width: 768px) {
     h1{
         font-size: 56px;
@@ -299,15 +317,20 @@ h6{
     .process_left{
         flex: 100%;
         height: 200px;
+        background-size: 90%, cover;
+        padding: 140px 0px 0px 0px;
     }
     .process_right{
         flex: 100%;
-        padding: 20px 30px 30px 30px;
+        padding: 0px 30px 30px 30px;
         margin-left: 0px;
-        margin-top: 30px;
+        margin-top: 0px;
         background-size: 90%;
     }
 }
+
+/* ***MAX 480*** */
+
 @media only screen and (max-width: 480px) {
     h1{
         font-size: 42px;
@@ -316,9 +339,6 @@ h6{
         width: 80%;
         margin: 0 auto 100px auto;
     }
-    .header_links{
-        display: none;
-    }
     .hero_content{
         width: 100%;
         background-size: 360%, auto;
@@ -326,12 +346,33 @@ h6{
     .header_cont{
         background-size: 100%;
     }
-    .header_cont h4{
-        font-size: 18px;
-        padding-top: 30px;
-        padding-right: 50px;
-        text-align: center;
-        float: none;
+    .header_links h5{
+        display: none;
     }
-    
+    .menu_icon{
+        margin-top: 14px;
+        display: block;
+    }
+    .footer h3{
+        text-align: center;
+        padding: 30px 0 30px 0px;
+        width: 100%;
+    }
+}
+
+/* ***MIN 1670*** */
+
+@media only screen and (min-width: 1670px) {
+    .hero_content{
+        text-align: center;
+        background-image: url(../assets/hero_bubs.svg), url(../assets/hero_bg.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto, cover;
+        background-position: center, center;
+    }
+    .tim_bubs{
+        position: relative;
+        padding-top: 20px;
+        padding-right: 0px;
+    }
 }
